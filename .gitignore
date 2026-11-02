@@ -1,0 +1,12 @@
+/target
+/results/*
+!/results/benchmarks.csv
+!/results/benchmarks.md
+!/results/benchmarks.svg
+!/results/environment.txt
+!/results/dudect-decaps.txt
+!/results/dudect-compress.txt
+*.log
+/tools/__pycache__/
+*.pyc
+paper/paper.html

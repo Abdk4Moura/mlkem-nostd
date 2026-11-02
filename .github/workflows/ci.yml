@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: 1.88.0
+          components: rustfmt, clippy
+          targets: thumbv7em-none-eabihf
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Verify pinned ACVP vectors
+        working-directory: vectors
+        run: sha256sum --check SHA256SUMS
+
+      - name: Format
+        run: cargo fmt --check
+
+      - name: Clippy (host)
+        run: cargo clippy --all-targets --all-features -- -D warnings
+
+      - name: Tests, including ACVP and property tests
+        run: cargo test --release --all-features
+
+      - name: no_std build
+        run: cargo build --release --target thumbv7em-none-eabihf
+
+      - name: Clippy (no_std target)
+        run: cargo clippy --release --target thumbv7em-none-eabihf -- -D warnings

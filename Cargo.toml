@@ -1,0 +1,58 @@
+[package]
+name = "mlkem-nostd"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+publish = false
+description = "Portable, no_std, allocation-free ML-KEM (FIPS 203) research implementation"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Abdk4Moura/mlkem-nostd"
+keywords = ["cryptography", "post-quantum", "ml-kem", "kyber", "no-std"]
+categories = ["cryptography", "no-std"]
+exclude = [
+    "vectors/*",
+    "results/*",
+    "paper/*",
+    ".github/*",
+    "Dockerfile",
+    "reproduce.sh",
+]
+
+[lib]
+name = "mlkem_nostd"
+path = "src/lib.rs"
+
+[features]
+default = []
+# Compiles the NIST ACVP known-answer tests. The library itself never needs
+# std; only the integration test does.
+acvp = []
+
+[dependencies]
+sha3 = { version = "=0.10.8", default-features = false }
+subtle = { version = "=2.6.1", default-features = false, features = ["const-generics"] }
+zeroize = { version = "=1.8.1", default-features = false, features = ["derive"] }
+rand_core = { version = "=0.6.4", default-features = false }
+
+[dev-dependencies]
+criterion = "=0.5.1"
+hex = "0.4"
+ml-kem = { version = "=0.3.4", default-features = false }
+proptest = "=1.6.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+dudect-bencher = "=0.7.0"
+rand = "0.10"
+
+[[bench]]
+name = "kem"
+harness = false
+
+[[bench]]
+name = "dudect"
+harness = false
+
+[profile.release]
+lto = true
+codegen-units = 1
