@@ -53,6 +53,11 @@
 #[cfg(test)]
 extern crate std;
 
+pub mod field;
+pub mod hash;
+pub mod ntt;
 pub mod params;
+pub mod poly;
+pub mod sample;
 
 pub use params::{MlKem1024, MlKem512, MlKem768, ParameterSet};
