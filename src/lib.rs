@@ -55,9 +55,15 @@ extern crate std;
 
 pub mod field;
 pub mod hash;
+pub mod kem;
+pub mod kpke;
 pub mod ntt;
 pub mod params;
 pub mod poly;
 pub mod sample;
 
+pub use kem::{
+    decaps_internal, encaps_internal, keygen_internal, Ciphertext, DecapsKey, EncapsKey,
+    InvalidKey, Kem, SharedSecret,
+};
 pub use params::{MlKem1024, MlKem512, MlKem768, ParameterSet};
