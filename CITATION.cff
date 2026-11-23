@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "mlkem-nostd: ML-KEM (FIPS 203) in no_std Rust"
+abstract: >-
+  A portable, no_std, allocation-free implementation of ML-KEM (FIPS 203)
+  supporting ML-KEM-512, ML-KEM-768 and ML-KEM-1024, with ACVP vectors,
+  property tests, a RustCrypto cross-check, dudect timing tests and Criterion
+  benchmarks. Research code; unaudited.
+authors:
+  - family-names: Agboola
+    given-names: Abdulkabir
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/Abdk4Moura/mlkem-nostd"
+keywords:
+  - ML-KEM
+  - FIPS 203
+  - Kyber
+  - post-quantum cryptography
+  - Rust
+  - no_std

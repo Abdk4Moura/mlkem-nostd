@@ -1,0 +1,6 @@
+target/
+results/
+.git/
+.gitignore
+*.pdf
+paper/

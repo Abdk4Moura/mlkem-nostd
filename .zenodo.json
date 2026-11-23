@@ -1,0 +1,22 @@
+{
+  "title": "mlkem-nostd: ML-KEM (FIPS 203) in no_std Rust",
+  "upload_type": "software",
+  "description": "A portable, no_std, allocation-free implementation of ML-KEM (FIPS 203) supporting ML-KEM-512, ML-KEM-768 and ML-KEM-1024. Includes official NIST ACVP known-answer tests, property tests, a byte-for-byte RustCrypto cross-check, dudect timing tests, Criterion benchmarks and a Docker reproducer. Research code; unaudited and not production ready.",
+  "creators": [
+    {
+      "name": "Agboola, Abdulkabir"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ML-KEM",
+    "FIPS 203",
+    "Kyber",
+    "post-quantum cryptography",
+    "Rust",
+    "no_std"
+  ],
+  "version": "0.1.0",
+  "publication_date": "2026-11-23",
+  "access_right": "open"
+}

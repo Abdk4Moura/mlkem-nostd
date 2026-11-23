@@ -1,0 +1,10 @@
+   Compiling mlkem-nostd v0.1.0 (C:\Users\agboola\mlkem-nostd)
+    Finished `bench` profile [optimized] target(s) in 8.17s
+     Running benches\dudect.rs (target\release\deps\dudect-1477630506a6db9a.exe)
+
+running 1 bench
+bench compress_secret_inputs   seeded with 0x81207449dd3a4755
+bench compress_secret_inputs   ... : n == +0.989M, max t = +2.25966, max tau = +0.00227, (5/tau)^2 = 4844556
+
+dudect benches complete
+

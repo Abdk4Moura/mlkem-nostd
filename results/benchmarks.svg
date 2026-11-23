@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="564" viewBox="0 0 1180 564" font-family="system-ui, sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="26" font-size="18" font-weight="600">ML-KEM benchmark mean latency (us)</text>
+<text x="20" y="44" fill="#555">Ours vs RustCrypto ml-kem 0.3.4; lower is better.</text>
+<text x="20" y="71">ml-kem-1024/decaps/ours</text>
+<rect x="300" y="59" width="574.67" height="18" fill="#2563eb"/>
+<text x="882.67" y="72">106.94</text>
+<text x="20" y="97">ml-kem-1024/decaps/rustcrypto</text>
+<rect x="300" y="85" width="760.00" height="18" fill="#94a3b8"/>
+<text x="1068.00" y="98">141.43</text>
+<text x="20" y="123">ml-kem-1024/encaps/ours</text>
+<rect x="300" y="111" width="438.54" height="18" fill="#2563eb"/>
+<text x="746.54" y="124">81.61</text>
+<text x="20" y="149">ml-kem-1024/encaps/rustcrypto</text>
+<rect x="300" y="137" width="575.93" height="18" fill="#94a3b8"/>
+<text x="883.93" y="150">107.18</text>
+<text x="20" y="175">ml-kem-1024/keygen/ours</text>
+<rect x="300" y="163" width="420.79" height="18" fill="#2563eb"/>
+<text x="728.79" y="176">78.31</text>
+<text x="20" y="201">ml-kem-1024/keygen/rustcrypto</text>
+<rect x="300" y="189" width="574.01" height="18" fill="#94a3b8"/>
+<text x="882.01" y="202">106.82</text>
+<text x="20" y="227">ml-kem-512/decaps/ours</text>
+<rect x="300" y="215" width="274.02" height="18" fill="#2563eb"/>
+<text x="582.02" y="228">50.99</text>
+<text x="20" y="253">ml-kem-512/decaps/rustcrypto</text>
+<rect x="300" y="241" width="347.98" height="18" fill="#94a3b8"/>
+<text x="655.98" y="254">64.76</text>
+<text x="20" y="279">ml-kem-512/encaps/ours</text>
+<rect x="300" y="267" width="204.97" height="18" fill="#2563eb"/>
+<text x="512.97" y="280">38.14</text>
+<text x="20" y="305">ml-kem-512/encaps/rustcrypto</text>
+<rect x="300" y="293" width="245.91" height="18" fill="#94a3b8"/>
+<text x="553.91" y="306">45.76</text>
+<text x="20" y="331">ml-kem-512/keygen/ours</text>
+<rect x="300" y="319" width="206.86" height="18" fill="#2563eb"/>
+<text x="514.86" y="332">38.50</text>
+<text x="20" y="357">ml-kem-512/keygen/rustcrypto</text>
+<rect x="300" y="345" width="235.68" height="18" fill="#94a3b8"/>
+<text x="543.68" y="358">43.86</text>
+<text x="20" y="383">ml-kem-768/decaps/ours</text>
+<rect x="300" y="371" width="399.74" height="18" fill="#2563eb"/>
+<text x="707.74" y="384">74.39</text>
+<text x="20" y="409">ml-kem-768/decaps/rustcrypto</text>
+<rect x="300" y="397" width="531.40" height="18" fill="#94a3b8"/>
+<text x="839.40" y="410">98.89</text>
+<text x="20" y="435">ml-kem-768/encaps/ours</text>
+<rect x="300" y="423" width="351.77" height="18" fill="#2563eb"/>
+<text x="659.77" y="436">65.46</text>
+<text x="20" y="461">ml-kem-768/encaps/rustcrypto</text>
+<rect x="300" y="449" width="396.19" height="18" fill="#94a3b8"/>
+<text x="704.19" y="462">73.73</text>
+<text x="20" y="487">ml-kem-768/keygen/ours</text>
+<rect x="300" y="475" width="289.16" height="18" fill="#2563eb"/>
+<text x="597.16" y="488">53.81</text>
+<text x="20" y="513">ml-kem-768/keygen/rustcrypto</text>
+<rect x="300" y="501" width="374.84" height="18" fill="#94a3b8"/>
+<text x="682.84" y="514">69.76</text>
+</svg>
